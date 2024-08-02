@@ -1,6 +1,5 @@
 ﻿using MatchTracker.Core.Interfaces;
 using MatchTracker.Core.Models;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MatchTracker.API.Controllers
@@ -20,7 +19,12 @@ namespace MatchTracker.API.Controllers
         public async Task<IActionResult> GetMatchesByDay(int matchDay)
         {
             var matches = await _matchService.GetMatchesByDayAsync(matchDay);
-            return Ok(matches);
+            if (!matches.Any())
+            {
+                return NotFound("No matches available for the selected day.");
+            }
+            var sortedMatches = matches.OrderByDescending(m => m.KickOffTime).ToList();
+            return Ok(sortedMatches);
         }
 
         [HttpPost("import")]

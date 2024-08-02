@@ -1,30 +1,25 @@
 ﻿using MatchTracker.Core.Interfaces;
 using MatchTracker.Infrastructure.Data;
+using System.Threading.Tasks;
 
 namespace MatchTracker.Infrastructure.Repositories
 {
-
     public class UnitOfWork : IUnitOfWork
     {
         private readonly MatchContext _context;
+        private readonly IMatchRepository _matchRepository;
 
-        public UnitOfWork(MatchContext context)
+        public UnitOfWork(MatchContext context, IMatchRepository matchRepository)
         {
             _context = context;
-            Matches = new MatchRepository(_context);
+            _matchRepository = matchRepository;
         }
 
-        public IMatchRepository Matches { get; }
+        public IMatchRepository Matches => _matchRepository;
 
-        public async Task<int> CompleteAsync()
+        public async Task CommitAsync()
         {
-            return await _context.SaveChangesAsync();
-        }
-
-        public void Dispose()
-        {
-            _context.Dispose();
+            await _context.SaveChangesAsync();
         }
     }
 }
-

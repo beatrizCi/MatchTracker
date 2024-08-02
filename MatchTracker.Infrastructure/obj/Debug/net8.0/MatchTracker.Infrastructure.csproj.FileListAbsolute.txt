@@ -8,8 +8,11 @@ C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.Infrastruct
 C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.Infrastructure\obj\Debug\net8.0\MatchTracker.Infrastructure.AssemblyInfoInputs.cache
 C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.Infrastructure\obj\Debug\net8.0\MatchTracker.Infrastructure.AssemblyInfo.cs
 C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.Infrastructure\obj\Debug\net8.0\MatchTracker.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.Infrastructure\obj\Debug\net8.0\MatchTracker.Infrastructure.sourcelink.json
 C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.Infrastructure\obj\Debug\net8.0\MatchTracker.Infrastructure.csproj.CopyComplete
 C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.Infrastructure\obj\Debug\net8.0\MatchTracker.Infrastructure.dll
 C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.Infrastructure\obj\Debug\net8.0\refint\MatchTracker.Infrastructure.dll
 C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.Infrastructure\obj\Debug\net8.0\MatchTracker.Infrastructure.pdb
 C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.Infrastructure\obj\Debug\net8.0\ref\MatchTracker.Infrastructure.dll
+C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.Infrastructure\bin\Debug\net8.0\MatchTracker.Infrastructure.runtimeconfig.json
+C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.Infrastructure\obj\Debug\net8.0\MatchTracker.Infrastructure.genruntimeconfig.cache

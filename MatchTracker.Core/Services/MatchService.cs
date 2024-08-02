@@ -1,10 +1,10 @@
-﻿namespace MatchTracker.Core.Services
-{
-    using MatchTracker.Core.Interfaces;
-    using MatchTracker.Core.Models;
-    using System.Collections.Generic;
-    using System.Threading.Tasks;
+﻿using MatchTracker.Core.Interfaces;
+using MatchTracker.Core.Models;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
+namespace MatchTracker.Infrastructure.Services
+{
     public class MatchService : IMatchService
     {
         private readonly IUnitOfWork _unitOfWork;
@@ -21,11 +21,8 @@
 
         public async Task ImportMatchesAsync(IEnumerable<Match> matches)
         {
-            foreach (var match in matches)
-            {
-                await _unitOfWork.Matches.AddAsync(match);
-            }
-            await _unitOfWork.CompleteAsync();
+            await _unitOfWork.Matches.AddRangeAsync(matches);
+            await _unitOfWork.CommitAsync();
         }
     }
 }

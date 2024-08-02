@@ -94,6 +94,7 @@ C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.Tests\obj\D
 C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.Tests\obj\Debug\net8.0\MatchTracker.Tests.AssemblyInfoInputs.cache
 C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.Tests\obj\Debug\net8.0\MatchTracker.Tests.AssemblyInfo.cs
 C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.Tests\obj\Debug\net8.0\MatchTracker.Tests.csproj.CoreCompileInputs.cache
+C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.Tests\obj\Debug\net8.0\MatchTracker.Tests.sourcelink.json
 C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.Tests\obj\Debug\net8.0\MatchTracker.Tests.csproj.CopyComplete
 C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.Tests\obj\Debug\net8.0\MatchTracker.Tests.dll
 C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.Tests\obj\Debug\net8.0\refint\MatchTracker.Tests.dll

@@ -1,11 +1,10 @@
-﻿
+﻿using System.Threading.Tasks;
 
 namespace MatchTracker.Core.Interfaces
 {
-    public interface IUnitOfWork : IDisposable
+    public interface IUnitOfWork
     {
         IMatchRepository Matches { get; }
-        Task<int> CompleteAsync();
+        Task CommitAsync();
     }
-
 }
