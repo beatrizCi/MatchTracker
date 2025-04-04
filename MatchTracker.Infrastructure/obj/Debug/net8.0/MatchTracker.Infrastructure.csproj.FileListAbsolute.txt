@@ -1,4 +1,5 @@
 C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.Infrastructure\bin\Debug\net8.0\MatchTracker.Infrastructure.deps.json
+C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.Infrastructure\bin\Debug\net8.0\MatchTracker.Infrastructure.runtimeconfig.json
 C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.Infrastructure\bin\Debug\net8.0\MatchTracker.Infrastructure.dll
 C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.Infrastructure\bin\Debug\net8.0\MatchTracker.Infrastructure.pdb
 C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.Infrastructure\bin\Debug\net8.0\MatchTracker.Core.dll
@@ -13,6 +14,5 @@ C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.Infrastruct
 C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.Infrastructure\obj\Debug\net8.0\MatchTracker.Infrastructure.dll
 C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.Infrastructure\obj\Debug\net8.0\refint\MatchTracker.Infrastructure.dll
 C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.Infrastructure\obj\Debug\net8.0\MatchTracker.Infrastructure.pdb
-C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.Infrastructure\obj\Debug\net8.0\ref\MatchTracker.Infrastructure.dll
-C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.Infrastructure\bin\Debug\net8.0\MatchTracker.Infrastructure.runtimeconfig.json
 C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.Infrastructure\obj\Debug\net8.0\MatchTracker.Infrastructure.genruntimeconfig.cache
+C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.Infrastructure\obj\Debug\net8.0\ref\MatchTracker.Infrastructure.dll

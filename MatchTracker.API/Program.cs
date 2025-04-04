@@ -4,7 +4,6 @@ using MatchTracker.Infrastructure.Repositories;
 using MatchTracker.Infrastructure.Seeders;
 using MatchTracker.Infrastructure.Services;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -46,6 +45,7 @@ using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
     var context = services.GetRequiredService<MatchContext>();
+    context.Database.EnsureDeleted(); // Ensure the database is deleted
     context.Database.Migrate(); // Apply any pending migrations
     DataSeeder.Seed(context); // Seed the database
 }
