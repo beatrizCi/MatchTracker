@@ -16,7 +16,7 @@ public class MatchModelTest
                 TeamB = "Sporting CP",
                 Stadium = "BVB Stadion Dortmund",
                 KickOffTime = new DateTime(2025, 4, 7, 18, 0, 0),
-                MatchDay = 3
+                MatchDay = 4
             };
 
             // Assert
