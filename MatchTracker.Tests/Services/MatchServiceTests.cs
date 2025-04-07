@@ -24,26 +24,39 @@ namespace MatchTracker.Tests.Services
             services.AddDbContext<MatchContext>(options =>
                 options.UseInMemoryDatabase("MatchTrackerTestDb"));
 
-            // Register MatchRepository as concrete
+            // Register MatchRepository and its interface
             services.AddScoped<MatchRepository>();
             services.AddScoped<IMatchRepository>(provider =>
                 provider.GetRequiredService<MatchRepository>());
 
-            // Register UnitOfWork
+            // Register UnitOfWork and MatchService
             services.AddScoped<IUnitOfWork, UnitOfWork>();
-
-            // Register MatchService
             services.AddScoped<IMatchService, MatchService>();
 
             var provider = services.BuildServiceProvider();
-
             var matchService = provider.GetRequiredService<IMatchService>();
 
             // Seed data
             var matchesToAdd = new List<Match>
             {
-                new Match { Id = 1, TeamA = "Team A", TeamB = "Team B", MatchDay = 1, KickOffTime = DateTime.Now, Stadium = "Stadium A" },
-                new Match { Id = 2, TeamA = "Team C", TeamB = "Team D", MatchDay = 2, KickOffTime = DateTime.Now, Stadium = "Stadium B" }
+                new Match
+                {
+                    Id = 1,
+                    TeamA = "Team A",
+                    TeamB = "Team B",
+                    MatchDay = 1,
+                    KickOffTime = DateTime.Now,
+                    Stadium = "Stadium A"
+                },
+                new Match
+                {
+                    Id = 2,
+                    TeamA = "Team C",
+                    TeamB = "Team D",
+                    MatchDay = 2,
+                    KickOffTime = DateTime.Now,
+                    Stadium = "Stadium B"
+                }
             };
 
             await matchService.ImportMatchesAsync(matchesToAdd);
@@ -53,7 +66,7 @@ namespace MatchTracker.Tests.Services
 
             // Assert
             Assert.NotNull(result);
-            Assert.Single(result); // Only 1 match on MatchDay 1
+            Assert.Single(result); // One match on MatchDay 1
         }
     }
 }
