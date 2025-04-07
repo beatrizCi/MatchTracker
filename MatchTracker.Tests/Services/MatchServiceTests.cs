@@ -1,6 +1,6 @@
 ﻿using MatchTracker.Core.Interfaces;
 using MatchTracker.Infrastructure.Services;
-using Microsoft.Extensions.DependencyInjection;
+using Moq;
 
 
 namespace MatchTracker.Tests.Services
@@ -8,16 +8,22 @@ namespace MatchTracker.Tests.Services
   public class MatchServiceTests
     {
         [Fact]
-        public void FixMyService()
+        public Task MatchService_ShouldBeCreated_WithMockedUnitOfWork()
         {
-            var services = new ServiceCollection();
-            services.AddScoped<IMatchService, MatchService>();
+            // Arrange
+            var mockRepo = new Mock<IMatchRepository>();
+            var mockUow = new Mock<IUnitOfWork>();
+            mockUow.Setup(u => u.Matches).Returns(mockRepo.Object);
 
-            var provider = services.BuildServiceProvider();
-            var service = provider.GetService<IMatchService>();
+            var matchService = new MatchService(mockUow.Object);
 
-            Assert.NotNull(service);
+            // Act
+            // Optionally call something like:
+            // var result = await matchService.GetAllMatches();
+
+            // Assert
+            Assert.NotNull(matchService);
+            return Task.CompletedTask;
         }
-
     }
 }
