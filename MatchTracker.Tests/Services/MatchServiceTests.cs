@@ -1,6 +1,5 @@
 ﻿using Xunit;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.EntityFrameworkCore;
 using MatchTracker.Core.Interfaces;
 using MatchTracker.Infrastructure.Data;
 using MatchTracker.Infrastructure.Repositories;
@@ -8,6 +7,8 @@ using MatchTracker.Infrastructure.Services;
 using MatchTracker.Core.Models;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace MatchTracker.Tests.Services
 {
@@ -20,7 +21,8 @@ namespace MatchTracker.Tests.Services
             var services = new ServiceCollection();
 
             services.AddDbContext<MatchContext>(options =>
-                options.UseInMemoryDatabase("MatchTrackerTestDb"));
+            options.UseInMemoryDatabase("MatchTrackerTestDb"));
+
 
             services.AddScoped<IMatchRepository, MatchRepository>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
