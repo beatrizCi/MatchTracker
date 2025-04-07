@@ -17,10 +17,7 @@ namespace MatchTracker.Infrastructure.Repositories
             Context = context;
         }
 
-        public async Task<TEntity> GetByIdAsync(int id)
-        {
-            return await Context.Set<TEntity>().FindAsync(id);
-        }
+        public async Task<TEntity> GetByIdAsync(int id) => await Context.Set<TEntity>().FindAsync(id);
 
         public async Task<IEnumerable<TEntity>> GetAllAsync()
         {

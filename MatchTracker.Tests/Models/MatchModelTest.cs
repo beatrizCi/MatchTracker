@@ -23,7 +23,7 @@ public class MatchModelTest
             Assert.Equal("Borussia Dortmund", match.TeamA);
             Assert.Equal("Sporting CP", match.TeamB);
             Assert.Equal("BVB Stadion Dortmund", match.Stadium);
-            Assert.Equal(3, match.MatchDay);
+            Assert.Equal(4, match.MatchDay);
         }
     }
 }
