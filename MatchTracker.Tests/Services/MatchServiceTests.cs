@@ -1,5 +1,6 @@
 ﻿using Xunit;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.EntityFrameworkCore;
 using MatchTracker.Core.Interfaces;
 using MatchTracker.Infrastructure.Data;
 using MatchTracker.Infrastructure.Repositories;
@@ -7,8 +8,7 @@ using MatchTracker.Infrastructure.Services;
 using MatchTracker.Core.Models;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-
+using System;
 
 namespace MatchTracker.Tests.Services
 {
@@ -20,18 +20,26 @@ namespace MatchTracker.Tests.Services
             // Arrange
             var services = new ServiceCollection();
 
+            // Register DbContext using InMemory
             services.AddDbContext<MatchContext>(options =>
-            options.UseInMemoryDatabase("MatchTrackerTestDb"));
+                options.UseInMemoryDatabase("MatchTrackerTestDb"));
 
+            // Register MatchRepository as concrete
+            services.AddScoped<MatchRepository>();
+            services.AddScoped<IMatchRepository>(provider =>
+                provider.GetRequiredService<MatchRepository>());
 
-            services.AddScoped<IMatchRepository, MatchRepository>();
+            // Register UnitOfWork
             services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+            // Register MatchService
             services.AddScoped<IMatchService, MatchService>();
 
             var provider = services.BuildServiceProvider();
+
             var matchService = provider.GetRequiredService<IMatchService>();
 
-            // Seed matches
+            // Seed data
             var matchesToAdd = new List<Match>
             {
                 new Match { Id = 1, TeamA = "Team A", TeamB = "Team B", MatchDay = 1, KickOffTime = DateTime.Now, Stadium = "Stadium A" },
@@ -45,7 +53,7 @@ namespace MatchTracker.Tests.Services
 
             // Assert
             Assert.NotNull(result);
-            Assert.Single(result); // One match on MatchDay 1
+            Assert.Single(result); // Only 1 match on MatchDay 1
         }
     }
 }
