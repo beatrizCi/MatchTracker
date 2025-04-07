@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "PE1NCufWtoRU+804aG1VDTf/MCTjyFn+z7djmfLgJPwAReT6GLwppbLQ1VlWsHejnZKZ/d80F7/7NTg4uVu6rA==",
+  "dgSpecHash": "oyPeeikH067nmiJUpl4N3o6LkHMzsb3A/9HhzNiInxie3EwpfTda5DLkCLwYPzVH+r7jZI8grGoAGZdheJ4Nyw==",
   "success": true,
   "projectFilePath": "C:\\Users\\OlgaBeatrizFernandod\\source\\repos\\MatchTracker\\MatchTracker.Tests\\MatchTracker.Tests.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,11 @@
     "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\microsoft.codecoverage\\17.6.0\\microsoft.codecoverage.17.6.0.nupkg.sha512",
     "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\microsoft.extensions.configuration\\9.0.3\\microsoft.extensions.configuration.9.0.3.nupkg.sha512",
+    "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.3\\microsoft.extensions.configuration.abstractions.9.0.3.nupkg.sha512",
+    "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.3\\microsoft.extensions.dependencyinjection.9.0.3.nupkg.sha512",
+    "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.3\\microsoft.extensions.dependencyinjection.abstractions.9.0.3.nupkg.sha512",
+    "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.3\\microsoft.extensions.primitives.9.0.3.nupkg.sha512",
     "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\microsoft.net.test.sdk\\17.6.0\\microsoft.net.test.sdk.17.6.0.nupkg.sha512",
     "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",

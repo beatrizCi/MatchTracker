@@ -8,7 +8,7 @@ namespace MatchTracker.Tests.Services
   public class MatchServiceTests
     {
         [Fact]
-        public void ShouldResolveMyService()
+        public void FixMyService()
         {
             var services = new ServiceCollection();
             services.AddScoped<IMatchService, MatchService>();

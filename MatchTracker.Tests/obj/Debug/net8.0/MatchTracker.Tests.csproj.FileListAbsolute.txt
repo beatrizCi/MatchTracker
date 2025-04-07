@@ -127,3 +127,8 @@ C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.Tests\obj\D
 C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.Tests\obj\Debug\net8.0\MatchTracker.Tests.pdb
 C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.Tests\obj\Debug\net8.0\MatchTracker.Tests.genruntimeconfig.cache
 C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.Tests\obj\Debug\net8.0\ref\MatchTracker.Tests.dll
+C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.Tests\bin\Debug\net8.0\Microsoft.Extensions.Configuration.dll
+C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.Tests\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.Tests\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.Tests\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.Tests\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll

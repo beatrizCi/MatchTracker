@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MatchTracker.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c7e93cc4c1fae152b6d6d26d11204bfe42b17986")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+79f20b05ff6e72c8c4e27ec422fcf19b25aaefde")]
 [assembly: System.Reflection.AssemblyProductAttribute("MatchTracker.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MatchTracker.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
