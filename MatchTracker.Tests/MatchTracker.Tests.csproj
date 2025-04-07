@@ -28,6 +28,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MatchTracker.Core\MatchTracker.Core.csproj" />
+    <ProjectReference Include="..\MatchTracker.Infrastructure\MatchTracker.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
