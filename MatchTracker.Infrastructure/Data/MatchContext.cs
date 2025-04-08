@@ -10,5 +10,8 @@ namespace MatchTracker.Infrastructure.Data
         }
 
         public DbSet<Match> Matches { get; set; }
+        public DbSet<ClubStat> ClubStats { get; set; }
+
+
     }
 }

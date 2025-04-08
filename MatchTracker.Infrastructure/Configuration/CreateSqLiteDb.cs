@@ -2,6 +2,7 @@
 {
     using MatchTracker.Infrastructure.Data;
     using Microsoft.AspNetCore.Builder;
+    using Microsoft.EntityFrameworkCore;
     using Microsoft.Extensions.DependencyInjection;
 
     public static class CreateSqLiteDb
@@ -11,7 +12,7 @@
             using (var serviceScope = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>().CreateScope())
             {
                 var context = serviceScope.ServiceProvider.GetRequiredService<MatchContext>();
-                context.Database.EnsureCreated(); // Creates the database if it doesn't exist
+                context.Database.Migrate();
             }
         }
     }

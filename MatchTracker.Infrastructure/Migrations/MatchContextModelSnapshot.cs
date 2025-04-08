@@ -17,6 +17,41 @@ namespace MatchTracker.Infrastructure.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.7");
 
+            modelBuilder.Entity("MatchTracker.Core.Models.ClubStat", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("ClubName")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Country")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("Drawn")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("LogoUrl")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("Lost")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("MatchesPlayed")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Won")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ClubStats");
+                });
+
             modelBuilder.Entity("MatchTracker.Core.Models.Match", b =>
                 {
                     b.Property<int>("Id")

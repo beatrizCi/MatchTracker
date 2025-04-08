@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "hLImtdhEgOqCc5gajMPpG5S2QP2vYXvlLKIiDuFVcsg=",
+  "Source": "MatchTracker.API",
+  "BasePath": "_content/MatchTracker.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

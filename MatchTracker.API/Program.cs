@@ -1,4 +1,4 @@
-using MatchTracker.Core.Interfaces;
+﻿using MatchTracker.Core.Interfaces;
 using MatchTracker.Infrastructure.Data;
 using MatchTracker.Infrastructure.Repositories;
 using MatchTracker.Infrastructure.Seeders;
@@ -7,32 +7,34 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// Add services to the container
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// Register DbContext
+// ✅ Register DbContext (only once)
 builder.Services.AddDbContext<MatchContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// Register repositories and unit of work
+// ✅ Register dependencies
 builder.Services.AddScoped<IMatchRepository, MatchRepository>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IMatchService, MatchService>();
 
+// ✅ Enable CORS
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowALL", builder =>
+    options.AddPolicy("AllowALL", policy =>
     {
-        builder.AllowAnyOrigin()
-               .AllowAnyMethod()
-               .AllowAnyHeader();
+        policy.AllowAnyOrigin()
+              .AllowAnyMethod()
+              .AllowAnyHeader();
     });
 });
 
 var app = builder.Build();
 
+// ✅ Swagger in dev
 if (app.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
@@ -40,22 +42,19 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-// Apply migrations and seed the database
+// ✅ Run migrations and seed (⚠️ no delete!)
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
     var context = services.GetRequiredService<MatchContext>();
-    context.Database.EnsureDeleted(); // Ensure the database is deleted
-    context.Database.Migrate(); // Apply any pending migrations
-    DataSeeder.Seed(context); // Seed the database
+
+    context.Database.Migrate();        // Apply migrations
+    DataSeeder.Seed(context);         // Seed initial data
 }
 
+// ✅ Middleware
 app.UseCors("AllowALL");
-
 app.UseHttpsRedirection();
-
 app.UseAuthorization();
-
 app.MapControllers();
-
 app.Run();

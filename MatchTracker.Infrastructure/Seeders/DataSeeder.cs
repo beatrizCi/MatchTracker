@@ -47,6 +47,35 @@ namespace MatchTracker.Infrastructure.Seeders
                 );
                 context.SaveChanges();
             }
+
+            if (!context.ClubStats.Any())
+            {
+                context.ClubStats.AddRange(
+                    new ClubStat
+                    {
+                        LogoUrl = "https://upload.wikimedia.org/bayern.png",
+                        ClubName = "Bayern München",
+                        Country = "Germany",
+                        MatchesPlayed = 12,
+                        Won = 8,
+                        Drawn = 1,
+                        Lost = 3
+                    },
+                    new ClubStat
+                    {
+                        LogoUrl = "https://upload.wikimedia.org/realmadrid.png",
+                        ClubName = "Real Madrid",
+                        Country = "Spain",
+                        MatchesPlayed = 12,
+                        Won = 8,
+                        Drawn = 0,
+                        Lost = 4
+                    }
+                );
+
+                context.SaveChanges();
+            }
+
         }
     }
 }

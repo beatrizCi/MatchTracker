@@ -4563,6 +4563,7 @@
       "MatchTracker.Core >= 1.0.0",
       "MatchTracker.Infrastructure >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 8.0.7",
+      "Microsoft.EntityFrameworkCore.Design >= 8.0.7",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.7",
       "Swashbuckle.AspNetCore >= 6.4.0",
       "System.Data.SQLite >= 1.0.118"
@@ -4615,6 +4616,12 @@
         "targetAlias": "net8.0",
         "dependencies": {
           "Microsoft.AspNetCore.Authentication.JwtBearer": {
+            "target": "Package",
+            "version": "[8.0.7, )"
+          },
+          "Microsoft.EntityFrameworkCore.Design": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
             "target": "Package",
             "version": "[8.0.7, )"
           },
