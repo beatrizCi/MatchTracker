@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "/9IbrWywqkDKA1ayMIdp4S8wszni4Kj8ZhYiDmLPEIx6HQgSXVnYDlCo8awb9xYI/NiljEfL8mUV9ts2p9CIsA==",
+  "dgSpecHash": "7M3p4PWkTtE=",
   "success": true,
   "projectFilePath": "C:\\Users\\OlgaBeatrizFernandod\\source\\repos\\MatchTracker\\MatchTracker.Tests\\MatchTracker.Tests.csproj",
   "expectedPackageFiles": [
@@ -21,15 +21,15 @@
     "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite.core\\6.0.16\\microsoft.entityframeworkcore.sqlite.core.6.0.16.nupkg.sha512",
     "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0\\microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\microsoft.extensions.caching.memory\\6.0.1\\microsoft.extensions.caching.memory.6.0.1.nupkg.sha512",
-    "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\microsoft.extensions.configuration\\9.0.3\\microsoft.extensions.configuration.9.0.3.nupkg.sha512",
-    "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.3\\microsoft.extensions.configuration.abstractions.9.0.3.nupkg.sha512",
-    "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.3\\microsoft.extensions.dependencyinjection.9.0.3.nupkg.sha512",
-    "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.3\\microsoft.extensions.dependencyinjection.abstractions.9.0.3.nupkg.sha512",
+    "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
+    "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\microsoft.extensions.dependencymodel\\6.0.0\\microsoft.extensions.dependencymodel.6.0.0.nupkg.sha512",
     "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\microsoft.extensions.logging\\6.0.0\\microsoft.extensions.logging.6.0.0.nupkg.sha512",
     "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
-    "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.3\\microsoft.extensions.primitives.9.0.3.nupkg.sha512",
+    "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
     "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\microsoft.net.test.sdk\\17.6.0\\microsoft.net.test.sdk.17.6.0.nupkg.sha512",
     "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
@@ -96,7 +96,7 @@
     "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\system.io.filesystem.primitives\\4.3.0\\system.io.filesystem.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\system.linq\\4.3.0\\system.linq.4.3.0.nupkg.sha512",
     "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\system.linq.expressions\\4.3.0\\system.linq.expressions.4.3.0.nupkg.sha512",
-    "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
     "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\system.net.http\\4.3.0\\system.net.http.4.3.0.nupkg.sha512",
     "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\system.net.primitives\\4.3.0\\system.net.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\system.net.sockets\\4.3.0\\system.net.sockets.4.3.0.nupkg.sha512",
@@ -148,9 +148,30 @@
     "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\xunit.extensibility.core\\2.4.2\\xunit.extensibility.core.2.4.2.nupkg.sha512",
     "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\xunit.extensibility.execution\\2.4.2\\xunit.extensibility.execution.2.4.2.nupkg.sha512",
     "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.5\\xunit.runner.visualstudio.2.4.5.nupkg.sha512",
-    "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.32\\microsoft.windowsdesktop.app.ref.6.0.32.nupkg.sha512",
     "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.32\\microsoft.netcore.app.ref.6.0.32.nupkg.sha512",
+    "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.32\\microsoft.windowsdesktop.app.ref.6.0.32.nupkg.sha512",
     "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.32\\microsoft.aspnetcore.app.ref.6.0.32.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "MatchTracker.Tests depends on Microsoft.Extensions.Configuration (>= 6.0.16) but Microsoft.Extensions.Configuration 6.0.16 was not found. An approximate best match of Microsoft.Extensions.Configuration 7.0.0 was resolved.",
+      "libraryId": "Microsoft.Extensions.Configuration",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "MatchTracker.Tests depends on Microsoft.Extensions.DependencyInjection (>= 6.0.16) but Microsoft.Extensions.DependencyInjection 6.0.16 was not found. An approximate best match of Microsoft.Extensions.DependencyInjection 7.0.0 was resolved.",
+      "libraryId": "Microsoft.Extensions.DependencyInjection",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

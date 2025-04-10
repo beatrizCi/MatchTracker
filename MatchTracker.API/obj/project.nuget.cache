@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "5vUX88gL97WPgSfUoHS/bt8D27JSUCiMgbxs8OTbp3orXt1Vk2RohV7YLKNbt5JPkUax4mthdpozezjh1neI4Q==",
+  "dgSpecHash": "kpYMEpeqO5s=",
   "success": true,
   "projectFilePath": "C:\\Users\\OlgaBeatrizFernandod\\source\\repos\\MatchTracker\\MatchTracker.API\\MatchTracker.API.csproj",
   "expectedPackageFiles": [
@@ -74,8 +74,8 @@
     "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
     "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512",
     "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
-    "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.32\\microsoft.windowsdesktop.app.ref.6.0.32.nupkg.sha512",
     "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.32\\microsoft.netcore.app.ref.6.0.32.nupkg.sha512",
+    "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.32\\microsoft.windowsdesktop.app.ref.6.0.32.nupkg.sha512",
     "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.32\\microsoft.aspnetcore.app.ref.6.0.32.nupkg.sha512",
     "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.32\\microsoft.netcore.app.host.win-x64.6.0.32.nupkg.sha512"
   ],
