@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "7M3p4PWkTtE=",
+  "dgSpecHash": "4tDA+t7ptoA5K6wjzU3kE75qPqVrxzZLBjJ47FgDbrdPaxozWJX3kA9XCHWSLkK9FzVCZFm5DTKa/iInq5UByQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\OlgaBeatrizFernandod\\source\\repos\\MatchTracker\\MatchTracker.Tests\\MatchTracker.Tests.csproj",
   "expectedPackageFiles": [
@@ -148,8 +148,8 @@
     "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\xunit.extensibility.core\\2.4.2\\xunit.extensibility.core.2.4.2.nupkg.sha512",
     "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\xunit.extensibility.execution\\2.4.2\\xunit.extensibility.execution.2.4.2.nupkg.sha512",
     "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.5\\xunit.runner.visualstudio.2.4.5.nupkg.sha512",
-    "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.32\\microsoft.netcore.app.ref.6.0.32.nupkg.sha512",
     "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.32\\microsoft.windowsdesktop.app.ref.6.0.32.nupkg.sha512",
+    "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.32\\microsoft.netcore.app.ref.6.0.32.nupkg.sha512",
     "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.32\\microsoft.aspnetcore.app.ref.6.0.32.nupkg.sha512"
   ],
   "logs": [

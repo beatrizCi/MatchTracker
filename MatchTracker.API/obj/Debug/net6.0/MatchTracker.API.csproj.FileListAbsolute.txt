@@ -98,9 +98,11 @@ C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.API\obj\Deb
 C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.API\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.MatchTracker.API.props
 C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.API\obj\Debug\net6.0\staticwebassets.pack.json
 C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.API\obj\Debug\net6.0\scopedcss\bundle\MatchTracker.API.styles.css
-C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.API\obj\Debug\net6.0\MatchTra.F79487A2.Up2Date
 C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.API\obj\Debug\net6.0\MatchTracker.API.dll
 C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.API\obj\Debug\net6.0\refint\MatchTracker.API.dll
 C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.API\obj\Debug\net6.0\MatchTracker.API.pdb
 C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.API\obj\Debug\net6.0\MatchTracker.API.genruntimeconfig.cache
 C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.API\obj\Debug\net6.0\ref\MatchTracker.API.dll
+C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.API\bin\Debug\net6.0\Npgsql.dll
+C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.API\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.API\obj\Debug\net6.0\MatchTra.F79487A2.Up2Date

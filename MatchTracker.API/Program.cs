@@ -4,6 +4,8 @@ using MatchTracker.Infrastructure.Repositories;
 using MatchTracker.Infrastructure.Seeders;
 using MatchTracker.Infrastructure.Services;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,9 +14,12 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// ✅ Register DbContext (only once)
+
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+
 builder.Services.AddDbContext<MatchContext>(options =>
-    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseNpgsql(connectionString));
+
 
 // ✅ Register dependencies
 builder.Services.AddScoped<IMatchRepository, MatchRepository>();

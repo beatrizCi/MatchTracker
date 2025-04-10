@@ -173,9 +173,9 @@ C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.Tests\obj\D
 C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.Tests\obj\Debug\net6.0\MatchTracker.Tests.AssemblyInfo.cs
 C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.Tests\obj\Debug\net6.0\MatchTracker.Tests.csproj.CoreCompileInputs.cache
 C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.Tests\obj\Debug\net6.0\MatchTracker.Tests.sourcelink.json
-C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.Tests\obj\Debug\net6.0\MatchTra.3C7D07A3.Up2Date
 C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.Tests\obj\Debug\net6.0\MatchTracker.Tests.dll
 C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.Tests\obj\Debug\net6.0\refint\MatchTracker.Tests.dll
 C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.Tests\obj\Debug\net6.0\MatchTracker.Tests.pdb
 C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.Tests\obj\Debug\net6.0\MatchTracker.Tests.genruntimeconfig.cache
 C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.Tests\obj\Debug\net6.0\ref\MatchTracker.Tests.dll
+C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.Tests\obj\Debug\net6.0\MatchTracker.Tests.csproj.CopyComplete
