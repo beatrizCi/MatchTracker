@@ -18,7 +18,7 @@ public class ClubStatsController : ControllerBase
     [HttpGet]
     public async Task<IActionResult> GetStats()
     {
-        var stats = _context.ClubStats.AsEnumerable().ToList(); // Sync version
+        var stats = _context.ClubStats.AsEnumerable().ToList(); 
         return Ok(stats);
     }
 }
