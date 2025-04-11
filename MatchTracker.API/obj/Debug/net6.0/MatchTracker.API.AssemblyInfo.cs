@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MatchTracker.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d9376a51ffd8af996fa25f25df56c65f8c7edf1e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+75d4a7987ba2a0ba7afa1a03803cde8f29b9a2d1")]
 [assembly: System.Reflection.AssemblyProductAttribute("MatchTracker.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MatchTracker.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

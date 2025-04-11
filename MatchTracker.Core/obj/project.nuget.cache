@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "D9HW2DRVcbM=",
+  "dgSpecHash": "6NPLbYzedSurrNiVuVtWd0jCYE8ydB2ht1nDJ6vn0QeCT+IyTk1kPmPrfRTg6xo/opPTQ7hksnEGxzHvB22ihw==",
   "success": true,
   "projectFilePath": "C:\\Users\\OlgaBeatrizFernandod\\source\\repos\\MatchTracker\\MatchTracker.Core\\MatchTracker.Core.csproj",
   "expectedPackageFiles": [
@@ -27,8 +27,8 @@
     "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\system.security.permissions\\4.7.0\\system.security.permissions.4.7.0.nupkg.sha512",
     "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512",
     "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
-    "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.32\\microsoft.netcore.app.ref.6.0.32.nupkg.sha512",
     "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.32\\microsoft.windowsdesktop.app.ref.6.0.32.nupkg.sha512",
+    "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.32\\microsoft.netcore.app.ref.6.0.32.nupkg.sha512",
     "C:\\Users\\OlgaBeatrizFernandod\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.32\\microsoft.aspnetcore.app.ref.6.0.32.nupkg.sha512"
   ],
   "logs": []

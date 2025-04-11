@@ -48,14 +48,15 @@ if (app.Environment.IsDevelopment())
 }
 
 // ✅ Run migrations and seed (⚠️ no delete!)
-using (var scope = app.Services.CreateScope())
-{
-    var services = scope.ServiceProvider;
-    var context = services.GetRequiredService<MatchContext>();
+// using (var scope = app.Services.CreateScope())
+// {
+//     var services = scope.ServiceProvider;
+//     var context = services.GetRequiredService<MatchContext>();
+//
+//     context.Database.Migrate();        // Apply migrations
+//     DataSeeder.Seed(context);         // Seed initial data
+// }
 
-    context.Database.Migrate();        // Apply migrations
-    DataSeeder.Seed(context);         // Seed initial data
-}
 
 // ✅ Middleware
 app.UseCors("AllowALL");

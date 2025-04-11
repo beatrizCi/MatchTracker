@@ -15,4 +15,4 @@ C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.Infrastruct
 C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.Infrastructure\obj\Debug\net6.0\MatchTracker.Infrastructure.pdb
 C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.Infrastructure\obj\Debug\net6.0\MatchTracker.Infrastructure.genruntimeconfig.cache
 C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.Infrastructure\obj\Debug\net6.0\ref\MatchTracker.Infrastructure.dll
-C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.Infrastructure\obj\Debug\net6.0\MatchTra.FF280B27.Up2Date
+C:\Users\OlgaBeatrizFernandod\source\repos\MatchTracker\MatchTracker.Infrastructure\obj\Debug\net6.0\MatchTracker.Infrastructure.csproj.CopyComplete

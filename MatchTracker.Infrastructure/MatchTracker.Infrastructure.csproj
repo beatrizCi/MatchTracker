@@ -21,8 +21,4 @@
     <ProjectReference Include="..\MatchTracker.Core\MatchTracker.Core.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Migrations\" />
-  </ItemGroup>
-
 </Project>
