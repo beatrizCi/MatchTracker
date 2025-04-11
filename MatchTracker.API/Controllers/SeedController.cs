@@ -1,34 +1,29 @@
 ﻿using MatchTracker.Infrastructure.Data;
 using MatchTracker.Infrastructure.Seeders;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
-namespace MatchTracker.API.Controllers
+[ApiController]
+[Route("api/[controller]")]
+public class SeedController : ControllerBase
 {
-    [ApiController]
-    [Route("api/[controller]")]
-    public class SeedController : ControllerBase
+    private readonly MatchContext _context;
+
+    public SeedController(MatchContext context)
     {
-        private readonly MatchContext _context;
+        _context = context;
+    }
 
-        public SeedController(MatchContext context)
+    [HttpPost]
+    public IActionResult Seed()
+    {
+        try
         {
-            _context = context;
+            DataSeeder.Seed(_context);
+            return Ok("✅ Seeding completed successfully.");
         }
-
-        [HttpPost]
-        public IActionResult Seed()
+        catch (Exception ex)
         {
-            try
-            {
-                _context.Database.Migrate(); 
-                DataSeeder.Seed(_context);   
-                return Ok("✅ Database seeded successfully!");
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, $"❌ Seeding failed: {ex.Message}");
-            }
+            return StatusCode(500, $"❌ Seeding failed:\n{ex.Message}\n{ex.InnerException?.Message}");
         }
     }
 }

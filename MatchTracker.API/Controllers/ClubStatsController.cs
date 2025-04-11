@@ -1,7 +1,7 @@
 ﻿using MatchTracker.Core.Models;
 using MatchTracker.Infrastructure.Data;
 using Microsoft.AspNetCore.Mvc;
-using System.Data.Entity;
+using Microsoft.EntityFrameworkCore;
 
 
 [ApiController]
@@ -18,7 +18,7 @@ public class ClubStatsController : ControllerBase
     [HttpGet]
     public async Task<IActionResult> GetStats()
     {
-        var stats = _context.ClubStats.AsEnumerable().ToList(); 
+        var stats = await _context.ClubStats.ToListAsync();
         return Ok(stats);
     }
 }

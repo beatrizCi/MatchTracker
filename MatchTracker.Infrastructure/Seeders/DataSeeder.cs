@@ -28,7 +28,7 @@ namespace MatchTracker.Infrastructure.Seeders
                     {
                         TeamA = "Bayern Munich",
                         TeamB = "Liverpool",
-                        KickOffTime = DateTime.SpecifyKind(new DateTime(2024, 8, 1, 12, 0, 0), DateTimeKind.Utc),
+                        KickOffTime = DateTime.SpecifyKind(new DateTime(2024, 8, 1, 14, 0, 0), DateTimeKind.Utc),
                         Stadium = "Allianz Arena",
                         MatchDay = 1
                     },
@@ -36,7 +36,7 @@ namespace MatchTracker.Infrastructure.Seeders
                     {
                         TeamA = "PSG",
                         TeamB = "Chelsea",
-                        KickOffTime = DateTime.SpecifyKind(new DateTime(2024, 8, 2, 12, 0, 0), DateTimeKind.Utc),
+                        KickOffTime = DateTime.SpecifyKind(new DateTime(2024, 8, 2, 16, 0, 0), DateTimeKind.Utc),
                         Stadium = "Parc des Princes",
                         MatchDay = 2
                     },
@@ -44,7 +44,7 @@ namespace MatchTracker.Infrastructure.Seeders
                     {
                         TeamA = "Barcelona",
                         TeamB = "Juventus",
-                        KickOffTime = DateTime.SpecifyKind(new DateTime(2024, 8, 2, 12, 0, 0), DateTimeKind.Utc),
+                        KickOffTime = DateTime.SpecifyKind(new DateTime(2024, 8, 2, 18, 0, 0), DateTimeKind.Utc),
                         Stadium = "Camp Nou",
                         MatchDay = 2
                     }
@@ -53,6 +53,7 @@ namespace MatchTracker.Infrastructure.Seeders
                 context.SaveChanges();
                 Console.WriteLine("✅ Matches seeded.");
             }
+
             if (!context.ClubStats.Any())
             {
                 Console.WriteLine("📌 Seeding ClubStats...");
@@ -106,7 +107,5 @@ namespace MatchTracker.Infrastructure.Seeders
 
             Console.WriteLine("🚀 Seeding complete.");
         }
-
     }
-    }
-    
+}
