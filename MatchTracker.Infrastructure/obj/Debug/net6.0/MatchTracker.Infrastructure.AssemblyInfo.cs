@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MatchTracker.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dcd3076edc1327b074ba895ec222174e1aed941b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d9376a51ffd8af996fa25f25df56c65f8c7edf1e")]
 [assembly: System.Reflection.AssemblyProductAttribute("MatchTracker.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MatchTracker.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

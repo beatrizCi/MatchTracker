@@ -11,13 +11,13 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MatchTracker.Infrastructure.Migrations
 {
     [DbContext(typeof(MatchContext))]
-    [Migration("20250410235536_FixMatchIdGeneration")]
-    partial class FixMatchIdGeneration
+    [Migration("20250411003606_InitialPostgresSetupV2")]
+    partial class InitialPostgresSetupV2
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
-            modelBuilder.HasAnnotation("ProductVersion", "6.0.16");
+            modelBuilder.HasAnnotation("ProductVersion", "6.0.29");
 
             modelBuilder.Entity("MatchTracker.Core.Models.ClubStat", b =>
                 {

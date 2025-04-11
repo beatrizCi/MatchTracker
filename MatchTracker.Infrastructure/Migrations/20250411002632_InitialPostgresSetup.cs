@@ -4,7 +4,7 @@
 
 namespace MatchTracker.Infrastructure.Migrations
 {
-    public partial class FixMatchIdGeneration : Migration
+    public partial class InitialPostgresSetup : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

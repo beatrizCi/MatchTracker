@@ -1,6 +1,7 @@
 ﻿
-using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 
 
 namespace MatchTracker.Core.Models
@@ -10,6 +11,9 @@ namespace MatchTracker.Core.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
+
+
+
         public string? TeamA { get; set; }
         public string? TeamB { get; set; }
         public DateTime KickOffTime { get; set; }
