@@ -12,7 +12,6 @@ public class SeedController : ControllerBase
     {
         _context = context;
     }
-
     [HttpPost]
     public IActionResult Seed()
     {
@@ -23,7 +22,15 @@ public class SeedController : ControllerBase
         }
         catch (Exception ex)
         {
-            return StatusCode(500, $"❌ Seeding failed:\n{ex.Message}\n{ex.InnerException?.Message}");
+            var fullError = $@"
+❌ Seeding failed:
+{ex.Message}
+{ex.InnerException?.Message}
+{ex.InnerException?.InnerException?.Message}
+";
+
+            return StatusCode(500, fullError);
         }
     }
+
 }
