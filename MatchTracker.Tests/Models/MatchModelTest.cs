@@ -9,7 +9,7 @@ public class MatchModelTest
         public void Can_Set_And_Get_Properties_On_Match()
         {
             // Arrange
-            var match = new Match
+            var match = new NewMatches
             {
                 Id = 1,
                 TeamA = "Borussia Dortmund",

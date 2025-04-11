@@ -15,17 +15,17 @@ namespace MatchTracker.Infrastructure.Repositories
             _context = context;
         }
 
-        public async Task<IEnumerable<Match>> GetMatchesByDayAsync(int matchDay)
+        public async Task<IEnumerable<NewMatches>> GetMatchesByDayAsync(int matchDay)
         {
-            return await _context.Matches
+            return await _context.NewMatches
                 .Where(m => m.MatchDay == matchDay)
                 .OrderByDescending(m => m.KickOffTime)
                 .ToListAsync();
         }
 
-        public async Task AddRangeAsync(IEnumerable<Match> matches)
+        public async Task AddRangeAsync(IEnumerable<NewMatches> matches)
         {
-            await _context.Matches.AddRangeAsync(matches);
+            await _context.Matches.AddRangeAsync();
             await _context.SaveChangesAsync();
         }
     }

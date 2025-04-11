@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MatchTracker.Core.Models
 {
-    public class Match
+    public class NewMatches
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

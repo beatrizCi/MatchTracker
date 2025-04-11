@@ -6,7 +6,7 @@ namespace MatchTracker.Core.Interfaces
 {
     public interface IMatchRepository
     {
-        Task<IEnumerable<Match>> GetMatchesByDayAsync(int matchDay);
-        Task AddRangeAsync(IEnumerable<Match> matches);
+        Task<IEnumerable<NewMatches>> GetMatchesByDayAsync(int matchDay);
+        Task AddRangeAsync(IEnumerable<NewMatches> matches);
     }
 }

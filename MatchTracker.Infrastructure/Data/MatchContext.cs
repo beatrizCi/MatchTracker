@@ -1,5 +1,6 @@
 ﻿using MatchTracker.Core.Models;
 using Microsoft.EntityFrameworkCore;
+using System.Text.RegularExpressions;
 
 namespace MatchTracker.Infrastructure.Data
 {
@@ -11,23 +12,33 @@ namespace MatchTracker.Infrastructure.Data
 
         public DbSet<Match> Matches { get; set; }
         public DbSet<ClubStat> ClubStats { get; set; }
+        public DbSet<NewMatches> NewMatches { get; set; } // ✅ New table added
 
-        // 🔥 This is where the magic happens — correctly overriding
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder); // <- still important!
+            // Match primary key setup
+            modelBuilder.Entity<NewMatches>()
+                .HasKey(m => m.Id);
 
-            modelBuilder.Entity<Match>(entity =>
-            {
-                entity.HasKey(m => m.Id);
-                entity.Property(m => m.Id).ValueGeneratedOnAdd();
-            });
+            modelBuilder.Entity<NewMatches>()
+                .Property(m => m.Id)
+                .ValueGeneratedOnAdd();
 
-            modelBuilder.Entity<ClubStat>(entity =>
-            {
-                entity.HasKey(c => c.Id);
-                entity.Property(c => c.Id).ValueGeneratedOnAdd();
-            });
+            // ClubStat primary key setup
+            modelBuilder.Entity<ClubStat>()
+                .HasKey(c => c.Id);
+
+            modelBuilder.Entity<ClubStat>()
+                .Property(c => c.Id)
+                .ValueGeneratedOnAdd();
+
+            // NewMatches primary key setup ✅
+            modelBuilder.Entity<NewMatches>()
+                .HasKey(nm => nm.Id);
+
+            modelBuilder.Entity<NewMatches>()
+                .Property(nm => nm.Id)
+                .ValueGeneratedOnAdd();
         }
     }
 }

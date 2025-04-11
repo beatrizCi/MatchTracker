@@ -4,7 +4,7 @@ namespace MatchTracker.Core.Interfaces
 {
     public interface IMatchService
     {
-        Task<IEnumerable<Match>> GetMatchesByDayAsync(int matchDay);
-        Task ImportMatchesAsync(IEnumerable<Match> matches);
+        Task<IEnumerable<NewMatches>> GetMatchesByDayAsync(int matchDay);
+        Task ImportMatchesAsync(IEnumerable<NewMatches> matches);
     }
 }

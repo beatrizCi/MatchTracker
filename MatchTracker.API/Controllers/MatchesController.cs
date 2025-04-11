@@ -19,7 +19,7 @@ namespace MatchTracker.API.Controllers
         }
 
         [HttpGet("{day}")]
-        public async Task<ActionResult<IEnumerable<Match>>> GetMatchesByDay(int day)
+        public async Task<ActionResult<IEnumerable<NewMatches>>> GetMatchesByDay(int day)
         {
             var matches = await _matchService.GetMatchesByDayAsync(day);
             if (matches == null || !matches.Any())
@@ -30,7 +30,7 @@ namespace MatchTracker.API.Controllers
         }
 
         [HttpPost("import")]
-        public async Task<IActionResult> ImportMatches([FromBody] List<Match> matches)
+        public async Task<IActionResult> ImportMatches([FromBody] List<NewMatches> matches)
         {
             await _matchService.ImportMatchesAsync(matches);
             return Ok();

@@ -11,40 +11,32 @@ namespace MatchTracker.Infrastructure.Seeders
         {
             Console.WriteLine("⚙️ Starting database seeding...");
 
-            if (!context.Matches.Any())
+            if (!context.NewMatches.Any())
             {
-                Console.WriteLine("📌 Seeding Matches...");
+                Console.WriteLine("📌 Seeding NewMatches...");
 
-                context.Matches.AddRange(
-                    new Match
+                context.NewMatches.AddRange(
+                    new NewMatches
                     {
-                        TeamA = "Real Madrid",
-                        TeamB = "Manchester City",
-                        KickOffTime = DateTime.SpecifyKind(new DateTime(2024, 8, 1, 12, 0, 0), DateTimeKind.Utc),
-                        Stadium = "Santiago Bernabéu",
-                        MatchDay = 1
+                        TeamA = "Napoli",
+                        TeamB = "Inter Milan",
+                        KickOffTime = DateTime.SpecifyKind(new DateTime(2024, 8, 3, 18, 0, 0), DateTimeKind.Utc),
+                        Stadium = "Stadio Diego Armando Maradona",
+                        MatchDay = 3
                     },
-                    new Match
+                    new NewMatches
                     {
-                        TeamA = "Bayern Munich",
-                        TeamB = "Liverpool",
-                        KickOffTime = DateTime.SpecifyKind(new DateTime(2024, 8, 1, 14, 0, 0), DateTimeKind.Utc),
-                        Stadium = "Allianz Arena",
-                        MatchDay = 1
+                        TeamA = "Arsenal",
+                        TeamB = "Tottenham",
+                        KickOffTime = DateTime.SpecifyKind(new DateTime(2024, 8, 4, 16, 30, 0), DateTimeKind.Utc),
+                        Stadium = "Emirates Stadium",
+                        MatchDay = 3
                     }
                 );
 
-                try
-                {
-                    context.SaveChanges();
-                    Console.WriteLine("✅ Matches seeded.");
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine("❌ Error saving Matches: " + ex.Message);
-                }
+                context.SaveChanges();
+                Console.WriteLine("✅ NewMatches seeded.");
             }
-
             if (!context.ClubStats.Any())
             {
                 Console.WriteLine("📌 Seeding ClubStats...");
@@ -87,5 +79,6 @@ namespace MatchTracker.Infrastructure.Seeders
 
             Console.WriteLine("🚀 Seeding complete.");
         }
+
     }
 }

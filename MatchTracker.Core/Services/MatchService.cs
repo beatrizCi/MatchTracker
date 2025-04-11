@@ -14,12 +14,12 @@ namespace MatchTracker.Infrastructure.Services
             _unitOfWork = unitOfWork;
         }
 
-        public async Task<IEnumerable<Match>> GetMatchesByDayAsync(int matchDay)
+        public async Task<IEnumerable<NewMatches>> GetMatchesByDayAsync(int matchDay)
         {
             return await _unitOfWork.Matches.GetMatchesByDayAsync(matchDay);
         }
 
-        public async Task ImportMatchesAsync(IEnumerable<Match> matches)
+        public async Task ImportMatchesAsync(IEnumerable<NewMatches> matches)
         {
             await _unitOfWork.Matches.AddRangeAsync(matches);
             await _unitOfWork.CommitAsync();
