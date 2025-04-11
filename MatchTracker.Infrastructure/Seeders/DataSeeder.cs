@@ -31,27 +31,18 @@ namespace MatchTracker.Infrastructure.Seeders
                         KickOffTime = DateTime.SpecifyKind(new DateTime(2024, 8, 1, 14, 0, 0), DateTimeKind.Utc),
                         Stadium = "Allianz Arena",
                         MatchDay = 1
-                    },
-                    new Match
-                    {
-                        TeamA = "PSG",
-                        TeamB = "Chelsea",
-                        KickOffTime = DateTime.SpecifyKind(new DateTime(2024, 8, 2, 16, 0, 0), DateTimeKind.Utc),
-                        Stadium = "Parc des Princes",
-                        MatchDay = 2
-                    },
-                    new Match
-                    {
-                        TeamA = "Barcelona",
-                        TeamB = "Juventus",
-                        KickOffTime = DateTime.SpecifyKind(new DateTime(2024, 8, 2, 18, 0, 0), DateTimeKind.Utc),
-                        Stadium = "Camp Nou",
-                        MatchDay = 2
                     }
                 );
 
-                context.SaveChanges();
-                Console.WriteLine("✅ Matches seeded.");
+                try
+                {
+                    context.SaveChanges();
+                    Console.WriteLine("✅ Matches seeded.");
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("❌ Error saving Matches: " + ex.Message);
+                }
             }
 
             if (!context.ClubStats.Any())
@@ -61,7 +52,7 @@ namespace MatchTracker.Infrastructure.Seeders
                 context.ClubStats.AddRange(
                     new ClubStat
                     {
-                        LogoUrl = "https://upload.wikimedia.org/wikipedia/en/1/1f/FC_Bayern_München_logo_(2017).svg",
+                        LogoUrl = "https://upload.wikimedia.org/wikipedia/en/1/1f/FC_Bayern_M%C3%BCnchen_logo_(2017).svg",
                         ClubName = "Bayern München",
                         Country = "Germany",
                         MatchesPlayed = 12,
@@ -78,31 +69,20 @@ namespace MatchTracker.Infrastructure.Seeders
                         Won = 8,
                         Drawn = 0,
                         Lost = 4
-                    },
-                    new ClubStat
-                    {
-                        LogoUrl = "https://upload.wikimedia.org/wikipedia/en/0/0c/Liverpool_FC.svg",
-                        ClubName = "Liverpool",
-                        Country = "England",
-                        MatchesPlayed = 10,
-                        Won = 5,
-                        Drawn = 1,
-                        Lost = 4
-                    },
-                    new ClubStat
-                    {
-                        LogoUrl = "https://upload.wikimedia.org/wikipedia/en/0/03/Manchester_City_FC_badge.svg",
-                        ClubName = "Manchester City",
-                        Country = "England",
-                        MatchesPlayed = 11,
-                        Won = 7,
-                        Drawn = 2,
-                        Lost = 2
                     }
                 );
 
-                context.SaveChanges();
-                Console.WriteLine("✅ ClubStats seeded.");
+                try
+                {
+                    context.SaveChanges();
+                    Console.WriteLine("✅ ClubStats seeded.");
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("❌ Error saving ClubStats: " + ex.Message);
+                    if (ex.InnerException != null)
+                        Console.WriteLine("Inner: " + ex.InnerException.Message);
+                }
             }
 
             Console.WriteLine("🚀 Seeding complete.");
